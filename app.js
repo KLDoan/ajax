@@ -2,7 +2,7 @@ const pokedex = document.getElementById('pokedex');
 
 const fetchPokemon = () => {
     const promises = [];
-    const limit = 200;
+    const limit = 200;  
     for (let i = 1; i <= limit; i++) {
         const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
         promises.push(fetch(url).then((res) => res.json()));
